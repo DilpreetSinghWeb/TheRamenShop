@@ -1,0 +1,133 @@
+/* ************* Home started ************/
+.home_content {
+  width: 1170px;
+  /* height:100vh; */
+  margin: 0 auto;
+  max-width: 95%;
+  display: flex;
+  padding: 120px 0 180px;
+}
+.home_left_content {
+  margin: auto;
+  width: 600px;
+  text-align: left;
+}
+.main_heading {
+  color: #090037;
+  margin: 14px 0px;
+  font-weight: 800;
+  font-size: 49px;
+}
+.main_paragraph {
+  color: #565172;
+  margin: 20px 0px;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 1px;
+}
+.small_heading {
+  color: #565172;
+  margin: 20px 0px 40px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.home_button {
+  transition: all 0.6s ease;
+  border-radius: 20px;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+}
+.home_button:hover {
+  transition: all 0.6s ease;
+  background-color: black;
+}
+.home_right_content {
+  display: flex;
+  margin: 0 30px;
+  align-items: center;
+  justify-content: center;
+}
+.home_right_content img {
+  margin: 10px 0;
+  border-radius: 15px;
+  width: 257px;
+  margin: 0 5px;
+}
+/***************** END Home ***********/
+
+/* ************Media Quieres************ */
+@media screen and (max-width: 1400px) {
+  .home_content {
+    transition: all 0.6s ease;
+    width: 1150px;
+  }
+  .home_right_content img {
+    transition: all 0.6s ease;
+    width: 150px;
+  }
+  .home_right_content img:nth-child(2) {
+    transition: all 0.6s ease;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home_content {
+    transition: all 0.6s ease;
+    width: 900px;
+  }
+  .home_left_content {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+  }
+  .home_left_content h1 {
+    font-size: 45px;
+  }
+  .home_right_content img {
+    transition: all 0.6s ease;
+    width: 180px;
+  }
+  .home_right_content img:nth-child(2) {
+    transition: all 0.6s ease;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .home_content {
+    padding: 15px 0;
+    flex-direction: column;
+  }
+  .home_left_content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .home_left_content h1 {
+    font-size: 27px;
+  }
+  .home_left_content p {
+    font-size: 14px;
+  }
+  .home_right_content {
+    margin: 0 76px;
+  }
+  .home_right_content img {
+    width: 100%;
+    margin: 12px 0;
+  }
+  .home_right_content img:nth-child(2) {
+    width: 100%;
+  }
+  .home_right_content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home_right_content {
+    margin: 0 30px;
+    display: flex;
+  }
+}

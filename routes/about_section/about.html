@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ad153718bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../../css/main_website/style.css">
+    <link rel="stylesheet" href="../../css/main_website/home.css">
+    <link rel="stylesheet" href="../../css/main_website/navbar.css">
+    <link rel="stylesheet" href="../../css/main_website/footer.css">
+    
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>About Us - The Ramen Shop Newtown</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav_content">
+            <div class="nav_logo">
+                <img src="/images/logo.png" alt="Img">
+            </div>
+
+            <div class="nav_items">
+                <ul>
+                    <button type="button" class="nav_toggler item-1">
+                        <i class="fa-sharp fa-solid fa-bars bars"></i>
+                        <i class="fa-sharp fa-solid fa-xmark close_btn"></i>
+                    </button>
+                    <li><a href="/index.html" class="active item-2">Home</a></li>
+                    <li><a href="../about_section/about.html" class="item-3">About Us</a></li>
+                    <li><a href="../contact_section/contact.html" class="item-4">Contact Us</a></li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="nav_button">Order Online</button>
+        <div class="toggle_sidenav">
+            <ul>
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="./css/about_section/about.html">About Us</a></li>
+                <li><a href="../contact_section/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="about_main_heading">
+        <h1 class="about_heading">
+            About Us
+        </h1>
+        <div class="about_heading_line"></div>
+    </div>
+    <div class="about_content">
+        <div class="about_left_content">
+            <h1 class="main_heading">The Ramen Shop</h1>
+            <p class="main_paragraph">The Ramen Shop started as a pop up restaurant in 2013. The Idea for the shop
+                mainly came about due to us wanted to eat ramen and there being nowhere that made ramen that didn’t come
+                out of a box or packet.</p>
+            <p class="main_paragraph">Some amazing venues allowed us to takeover their businesses one night at a time
+                and our following grew from there.These businesses are the reason we are here today and we will always
+                be thankful for that.Respect to: Golding’s Free Dive, Hasigo Zake, Rogue and Vagabond, Flight Coffee
+                Hangar, Six Barrel Soda</p>
+            <p class="main_paragraph">
+                In 2014 we opened a real shop at our Newtown location and in 2018 we opened our CBD shop on Victoria
+                Street.</p>
+            <p class="main_paragraph">We are always working hard to provide the best ramen we can, we want our food to
+                be accessible, fun and yum.We make everything we can from scratch because we want to know whats in the
+                food we are giving you.
+            </p>
+            <p class="main_paragraph">Affordability is important to us and we will always look to provide high quality
+                food and drink at a reasonable price without sacrificing quality.
+            </p>
+        </div>
+        <div class="about_right_content">
+            <img src="/images/about_01.jpg" alt="">
+        </div>
+    </div>
+      <!-- Footer Section  -->
+      <div class="footer_container">
+        <div class="footer_content">
+            <div class="footer_top">
+                <div class="footer_box">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <h3>Our Address</h3>
+                    <p class="main_paragraph">191 Riddiford Street, Newtown Wellington</p>
+                </div>
+                <div class="footer_box">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Our Phone</h3>
+                    <p class="main_paragraph">043892263</p>
+                </div>
+                <div class="footer_box">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p class="main_paragraph">Monday - Sunday</p>
+                    <p class="main_paragraph">11:00 AM - 2:00 PM</p>
+                    <p class="main_paragraph">5:30 PM - 8:30 PM</p>
+                </div>
+            </div>
+            <div class="line footer_line"></div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_content">
+                    <p>Made with &hearts; by Easy Eats</p>
+                    <div class="footer_icons">
+                       <a target="_blank" href="https://www.facebook.com/EasyEats.kiwi/"><i class="fa-brands fa-facebook-f"></i></a> 
+                        <a target="_blank" href="https://www.instagram.com/easy_eats_nz/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // Navbar Javascript
+    const NavToggle = document.querySelector(".nav_toggler");
+    const sidenav = document.querySelector(".toggle_sidenav");
+    const bars = document.querySelector('.bars');
+    const close_btn = document.querySelector('.close_btn');
+    console.log(bars);
+    NavToggle.addEventListener('click', function () {
+        sidenav.classList.toggle('toggle_sidenav_open');
+        if (bars.style.display == 'none') {
+            bars.style.display = 'block';
+            close_btn.style.display = 'none';
+        }
+        else {
+            bars.style.display = 'none';
+            close_btn.style.display = 'block';
+
+        }
+    });
+</script>
+
+</html>

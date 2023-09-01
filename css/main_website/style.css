@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behaviour: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  padding: 13px 24px;
+  cursor: pointer;
+  border: 0;
+  background-color: #eb6f97;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+.margin{
+  margin:80px auto;
+}
+
+.button  {
+  font-size:20px;
+  border-radius:25px;
+  margin-top:30px;
+  transition:all .5s ease; 
+}
+.button:hover  {
+  background:black;
+  color:white;
+}
+.about_main_heading,.contact_main_heading{
+  width:100%;
+  padding:110px 30px 50px;
+  background-color:#54595f;
+  text-align:center;
+}
+.about_heading,.contact_heading{
+  padding:20px 0; 
+  letter-spacing:2px;
+  font-size:40px;
+  color:white;
+}
+.about_heading_line,.contact_heading_line{
+  width:80px;
+  height:4px;
+  background:white;
+  margin:auto;
+}
+
+.location_map iframe{
+  margin:20px 0;
+  width:980px;
+  height:500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .location_map iframe{
+      margin:20px 0;
+      width:500px;
+      height:500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .location_map iframe{
+      margin:20px 0;
+      width:400px;
+      height:500px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .location_map iframe{
+      margin:20px 0;
+      width:300px;
+      height:400px;
+  }
+}
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ad153718bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../../css/main_website/style.css">
+    <link rel="stylesheet" href="../../css/main_website/navbar.css">
+    <link rel="stylesheet" href="../../css/main_website/footer.css">
+    <link rel="stylesheet" href="../contact_section/contact.css">
+    
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Contact Us - The Ramen Shop Newtown</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav_content">
+            <div class="nav_logo">
+                <a href="/"><img src="/images/logo.png" alt=""></a> 
+            </div>
+
+            <div class="nav_items">
+                <ul>
+                    <button type="button" class="nav_toggler item-1">
+                        <i class="fa-sharp fa-solid fa-bars bars"></i>
+                        <i class="fa-sharp fa-solid fa-xmark close_btn"></i>
+                    </button>
+                    <li><a href="/index.html" class="active item-2">Home</a></li>
+                    <li><a href="../about_section/about.html" class="item-3">About Us</a></li>
+                    <li><a href="../contact_section/contact.html" class="item-4">Contact Us</a></li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="nav_button">Order Online</button>
+        <div class="toggle_sidenav">
+            <ul>
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="../about_section/about.html">About Us</a></li>
+                <li><a href="../contact_section/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact_main_heading">
+        <h1 class="contact_heading">
+            Contact Us
+        </h1>
+        <div class="contact_heading_line"></div>
+    </div>
+    <div class="contact_map">
+        <div class="location_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11987.051647305814!2d174.77130567129836!3d-41.314021069955864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb3b4deb2d%3A0xa9bd7d39edb55673!2sThe%20Ramen%20Shop%20-%20Newtown!5e0!3m2!1sen!2sin!4v1662987702645!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+         <!-- Footer Section  -->
+      <div class="footer_container">
+        <div class="footer_content">
+            <div class="footer_top">
+                <div class="footer_box">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <h3>Our Address</h3>
+                    <p class="main_paragraph">191 Riddiford Street, Newtown Wellington</p>
+                </div>
+                <div class="footer_box">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Our Phone</h3>
+                    <p class="main_paragraph">043892263</p>
+                </div>
+                <div class="footer_box">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p class="main_paragraph">Monday - Sunday</p>
+                    <p class="main_paragraph">11:00 AM - 2:00 PM</p>
+                    <p class="main_paragraph">5:30 PM - 8:30 PM</p>
+                </div>
+            </div>
+            <div class="line footer_line"></div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_content">
+                    <p>Made with &hearts; by Easy Eats</p>
+                    <div class="footer_icons">
+                       <a target="_blank" href="https://www.facebook.com/EasyEats.kiwi/"><i class="fa-brands fa-facebook-f"></i></a> 
+                        <a target="_blank" href="https://www.instagram.com/easy_eats_nz/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script>
+
+    // Navbar Javascript
+    const NavToggle = document.querySelector(".nav_toggler");
+    const sidenav = document.querySelector(".toggle_sidenav");
+    const bars = document.querySelector('.bars');
+    const close_btn = document.querySelector('.close_btn');
+    console.log(bars);
+    NavToggle.addEventListener('click', function () {
+        sidenav.classList.toggle('toggle_sidenav_open');
+        if (bars.style.display == 'none') {
+            bars.style.display = 'block';
+            close_btn.style.display = 'none';
+        }
+        else {
+            bars.style.display = 'none';
+            close_btn.style.display = 'block';
+
+        }
+    });
+</script>
+
+</html>
